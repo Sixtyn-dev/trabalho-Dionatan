@@ -1,0 +1,323 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7fbfc;
+    color: #263238;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dce8eb;
+    padding: 20px 0;
+}
+
+.cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    color: #087f8c;
+    font-size: 28px;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: #263238;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #087f8c;
+}
+
+
+/* =========================
+   SEÇÃO PRINCIPAL
+========================= */
+
+.hero {
+    padding: 70px 0;
+    background-color: #e7f6f7;
+}
+
+.hero-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-texto {
+    flex: 1;
+}
+
+.hero-texto h2 {
+    font-size: 42px;
+    color: #075f69;
+    margin-bottom: 20px;
+}
+
+.hero-texto p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-imagem {
+    flex: 1;
+}
+
+.hero-imagem img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.botao {
+    display: inline-block;
+    background-color: #087f8c;
+    color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao:hover {
+    background-color: #075f69;
+}
+
+
+/* =========================
+   SEÇÃO SOBRE
+========================= */
+
+.sobre {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.sobre h2 {
+    color: #075f69;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.destaques {
+    padding: 60px 0;
+}
+
+.destaques h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #075f69;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #dce8eb;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+    color: #087f8c;
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   TÍTULO DAS PÁGINAS
+========================= */
+
+.titulo-pagina {
+    background-color: #e7f6f7;
+    text-align: center;
+    padding: 55px 0;
+}
+
+.titulo-pagina h2 {
+    font-size: 36px;
+    color: #075f69;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   SERVIÇOS
+========================= */
+
+.servicos {
+    padding: 60px 0;
+}
+
+.servico-card {
+    min-height: 180px;
+}
+
+.chamada {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.chamada h2 {
+    color: #075f69;
+    margin-bottom: 10px;
+}
+
+.chamada p {
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   CONTATO
+========================= */
+
+.contato {
+    padding: 60px 0;
+}
+
+.contato-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.informacoes h2,
+.formulario h2 {
+    color: #075f69;
+    margin-bottom: 25px;
+}
+
+.informacoes p {
+    margin-bottom: 15px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #c8d9dd;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: 2px solid #8ed4da;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.rodape {
+    background-color: #075f69;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 30px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    .cabecalho .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .hero-conteudo {
+        flex-direction: column;
+    }
+
+    .hero-texto h2 {
+        font-size: 32px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contato-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+}
